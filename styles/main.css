@@ -1,0 +1,82 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+}
+
+.nav ul {
+    display: flex;
+    border: 3px solid #F5793B;
+    background-color: #FCCA59;
+    width: 80%;
+    max-width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius: 60px;
+    margin: 8px;
+    list-style-type: none;
+}
+
+.nav ul li {
+    padding: 8px;
+    margin: 0 10px;
+    color: #267F53;
+    font-size: 24px;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    margin: 8px;
+}
+
+.about-me {
+    padding: 10px;
+    color: #F296BD;
+    background-color: #267F53;
+}
+
+.project-section {
+    /* i want to make this widder that the one above it but will see later */
+    padding: 10px;
+    background-color: #99B7F5;
+    justify-content: center;
+    height: 450px;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#title{
+    display: flex;
+    color: #267F53;
+    letter-spacing: 1.5ch;
+    height: 20%;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    height: 70%;
+    align-items: flex-end;
+}
+.project-section .projects .project {
+    background-color: #F296BD;
+    box-shadow: #267F53;
+    height: 90%;
+    max-height: 100%;
+    width: 200px;
+    max-width: 100%;
+    padding: 8px;
+    margin-top: 50px;
+}
