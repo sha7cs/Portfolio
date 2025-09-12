@@ -1,14 +1,23 @@
 body {
-    background-color: white;
+    background-color: rgb(249, 243, 241);
     display: flex;
     justify-content: center;
     flex-direction: column;
+    font-family: "Kode Mono", monospace;
+    padding: 50px 20px 10px 20px; /* before it the navbar was on top of the next section */
+
+    transition: background-color 0.8s ease, color 0.2s ease; /* for the background color change */
 }
+
 
 .nav {
     display: flex;
     justify-content: center;
-    margin: 10px 20px;
+    position: fixed; /* i want to make it fixed*/
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* so other elemnts doesnt go infrot of it*/
 }
 
 .nav ul {
@@ -26,10 +35,19 @@ body {
 }
 
 .nav ul li {
-    padding: 8px;
+    padding: 10px;
     margin: 0 10px;
-    color: #267F53;
     font-size: 24px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #267F53;
+}
+
+.nav ul li :hover {
+    /* it is so fast when i hover, i think there is a way to make it smoother */
+    font-size: 26px;
 }
 
 div {
@@ -40,9 +58,47 @@ div {
 }
 
 .about-me {
-    padding: 10px;
+    padding: 14px;
+    font-size: 1rem;
     color: #F296BD;
-    background-color: #267F53;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px #F296BD;
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+    margin-top: 30px;
+}
+
+.about-me .title-about {
+    color: #FCCA59;
+    width: 100%;
+    font-size: 3rem;
+    letter-spacing: 0.5ch;
+}
+
+.about-me .my-name {
+    font-size: 3.5rem;
+    padding-left: 100px;
+    width: 100%;
+}
+
+.about-me .about-me-p {
+    padding-left: 90px;
+    width: 60%;
+}
+
+.about-me .education {
+    padding-left: 90px;
+    width: 60%;
+}
+
+.about-me .education-p {
+    padding-left: 90px;
+    width: 60%;
+}
+
+.about-me h2:hover {
+    letter-spacing: 0.3ch;
 }
 
 .project-section {
@@ -50,33 +106,128 @@ div {
     padding: 10px;
     background-color: #99B7F5;
     justify-content: center;
-    height: 450px;
+    height: 90%;
     max-height: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-#title{
+#title {
+    /* i might make it vertical */
     display: flex;
     color: #267F53;
     letter-spacing: 1.5ch;
+    font-size: 1.5rem;
     height: 20%;
+    justify-content: center;
 }
 
-.projects{
+.projects {
     display: flex;
     flex-wrap: wrap;
     height: 70%;
-    align-items: flex-end;
+    justify-content: space-around;
 }
+
 .project-section .projects .project {
     background-color: #F296BD;
-    box-shadow: #267F53;
+    box-shadow: 3px 2px 3px 4px #267F53;
     height: 90%;
     max-height: 100%;
-    width: 200px;
-    max-width: 100%;
+    max-width: 45%;
+    min-width: 45%;
     padding: 8px;
-    margin-top: 50px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
 }
+
+.project img {
+    width: 40%;
+}
+
+.project .content {
+    width: 55%;
+}
+
+.project-section .projects .project:hover {
+    box-shadow: 13px 2px 3px 4px #267F53;
+}
+
+
+.two-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.two-sections .skills {
+    background-color: #FCCA59;
+    border: 2px solid #F5793B;
+    height: 100%;
+    width: 48%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills-title {
+    /* i want to make a white border for the text */
+    /* or should i make it whit so it look like it is cut out of the box?? */
+    align-self: center;
+    font-size: 2rem;
+    width: 100%;
+    color: white;
+    letter-spacing: 2ch;
+    text-align: center;
+    /* text-shadow: 2px 2px 5px rgba(0,0,0,0.4); this makes the shadow outside i want it inside */
+}
+
+.two-sections .skills .skills-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.two-sections .skills .skills-imgs img {
+    width: 18%;
+    background-color: white;
+    border-radius: 50%;
+    border: 10px solid white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.two-sections .skills .skills-imgs img:hover {
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.two-sections .contacts {
+    border: 2px solid #F5793B;
+    height: 20rem;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    border-top: 4px solid #F296BD;
+    background-color: azure;
+    border-radius: 2px;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+}
+
+/* section animation class */
+ .section {
+    translate: -100%;
+    opacity: 0;
+    transition: 800ms ease;
+ }
+ .section.show {
+    translate: 0;
+    opacity: 1;
+ }

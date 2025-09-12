@@ -8,53 +8,122 @@
     <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
     <link rel="stylesheet" href="./styles/main.css">
     <script src="./scripts/app.js"></script>
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav class="nav">
         <ul>
-            <li href="">about me</li>
-            <li href="">projects</li>
-            <li href="">links</li>
+            <li><a href="#about-me">about me</a></li> <!--does it need js ??-->
+            <li href=""><a href="#project-section">projects</a></li>
+            <li href=""><a href="#contacts">contacts</a></li>
         </ul>
     </nav>
 
-    <div class="about-me">
-        <h2 class="my-name">Shatha Alharbi</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae a unde voluptate temporibus minima
+    <div class="section about-me" id="about-me">
+        <!-- i want to add some animation here maybe put a star at the bottom of this section and as i scrool pass it it will go up ?  -->
+        <h2 class="title-about">about me</h2>
+        <h2 class="my-name">Shatha Alharbi ⭐️</h2>
+
+        <p class="about-me-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae a unde voluptate
+            temporibus minima
             beatae deserunt blanditiis ea similique. Distinctio magni sint tenetur culpa provident hic fugiat odio animi
             sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque labore quo eveniet consectetur, quae
             corrupti? Dolores commodi pariatur, nesciunt ipsam, rerum aspernatur nihil optio, doloribus in vitae
             delectus laboriosam harum?</p>
+
+        <h2 class="education">Education</h2>
+        <p class="education-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, sunt architecto.
+            Nobis ullam suscipit distinctio modi consectetur sit rem laboriosam libero ad voluptatum atque, voluptates
+            exercitationem accusantium tenetur fuga aspernatur!</p>
     </div>
 
-    <div class="project-section"> <!--this will be like a card that has a project info -->
+    <div class="section project-section" id="project-section"> <!--this will be like a card that has a project info -->
         <div id="title">
             <h2>projects</h2>
         </div>
 
         <div class="projects">
-            
+
             <div class="project"> <!--  project 1 -->
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sunt quas quo laboriosam, suscipit
-                    dolorum quia facilis sit? Delectus assumenda iure ex vitae, vel laborum. Nihil officia delectus
-                    nulla vero.</p>
+                <img src="https://i.pinimg.com/1200x/c8/c2/32/c8c23250b368d19582f84677315115ae.jpg" alt="project 1"
+                    width="100">
+                <div class="content">
+                    <h3>project title</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sunt quas quo laboriosam, suscipit
+                        dolorum quia facilis sit? Delectus assumenda iure ex vitae, vel laborum. Nihil officia delectus
+                        nulla vero.</p>
+                    <a href="">link</a>
+                </div>
             </div>
 
 
-             <div class="project">  <!--  project 2 -->
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sunt quas quo laboriosam, suscipit
-                    dolorum quia facilis sit? Delectus assumenda iure ex vitae, vel laborum. Nihil officia delectus
-                    nulla vero.</p>
+            <div class="project"> <!--  project 2 -->
+                <img src="https://i.pinimg.com/1200x/c8/c2/32/c8c23250b368d19582f84677315115ae.jpg" alt="project 1"
+                    width="100">
+                <div class="content">
+                    <h3>project title</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sunt quas quo laboriosam, suscipit
+                        dolorum quia facilis sit? Delectus assumenda iure ex vitae, vel laborum. Nihil officia delectus
+                        nulla vero.</p>
+                    <a href="">link</a>
+                </div>
+
+            </div>
+            <div class="project"> <!--  project 3 -->
+                <img src="https://i.pinimg.com/1200x/c8/c2/32/c8c23250b368d19582f84677315115ae.jpg" alt="project 1"
+                    width="100">
+                <div class="content">
+                    <h3>project title</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sunt quas quo laboriosam, suscipit
+                        dolorum quia facilis sit? Delectus assumenda iure ex vitae, vel laborum. Nihil officia delectus
+                        nulla vero.</p>
+                    <a href="">link</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section two-sections">
+        <div class="skills">
+            <h2 id="skills-title">skills</h2>
+            <div class="skills-imgs">
+                <img id="python-img" src="https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png"
+                    alt="python">
+                <img id="javascript-img" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="javascript">
+                <img id="html-img"
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-html-5-icon-svg-download-png-1175208.png"
+                    alt="CSS">
+                <img id="php-img" src="https://cdn-icons-png.flaticon.com/512/5968/5968532.png" alt="php">
+                <img id="laravel-img"
+                    src="https://brandlogos.net/wp-content/uploads/2022/01/laravel-logo-brandlogo.net_.png"
+                    alt="Laravel">
             </div>
 
 
         </div>
 
+        <div class="contacts" id="contacts">
+            <h2>my contacts</h2>
+            <div>
 
-
-
+            </div>
+        </div>
     </div>
+
+    <div>
+        <!-- form  -->
+    </div>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>
