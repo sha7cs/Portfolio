@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
     <link rel="stylesheet" href="./styles/main.css">
     <script src="./scripts/app.js"></script>
 
@@ -16,33 +15,61 @@
 </head>
 
 <body>
+    <!-- this protfilio  https://sawad.framer.website inspired me a bit for the layout -->
     <nav class="nav">
         <ul>
-            <li><a href="#about-me">about me</a></li> <!--does it need js ??-->
+            <li><a href="#about">about me</a></li>
+            <li><a href="#skills">skills</a></li>
             <li href=""><a href="#project-section">projects</a></li>
             <li href=""><a href="#contacts">contacts</a></li>
         </ul>
     </nav>
-
-    <div class="section about-me" id="about-me">
-        <!-- i want to add some animation here maybe put a star at the bottom of this section and as i scrool pass it it will go up ?  -->
+    <div id="about"></div> <!--since about me section is sticky it doesnt really show when i click it in navbar, so i did this as a hacky solution :)-->
+    
+    <!-- About me section -->
+    <div class="about-me" id="about-me">
         <h2 class="title-about">about me</h2>
-        <h2 class="my-name">Shatha Alharbi ⭐️</h2>
+        <h2 class="my-name">Shatha Alharbi⭐️</h2>
 
-        <p class="about-me-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae a unde voluptate
-            temporibus minima
-            beatae deserunt blanditiis ea similique. Distinctio magni sint tenetur culpa provident hic fugiat odio animi
-            sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque labore quo eveniet consectetur, quae
-            corrupti? Dolores commodi pariatur, nesciunt ipsam, rerum aspernatur nihil optio, doloribus in vitae
-            delectus laboriosam harum?</p>
+        <p class="about-me-p">
+            <strong>Software Engineer</strong> in development, interested in web development, with some background in
+            AI.
+        </p>
 
         <h2 class="education">Education</h2>
-        <p class="education-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, sunt architecto.
-            Nobis ullam suscipit distinctio modi consectetur sit rem laboriosam libero ad voluptatum atque, voluptates
-            exercitationem accusantium tenetur fuga aspernatur!</p>
+        <p class="education-p">Graduated with First-class Honors in Computer Science from Qassim University</p>
     </div>
 
-    <div class="section project-section" id="project-section"> <!--this will be like a card that has a project info -->
+    <!-- skills section -->
+    <div class="section skills" id="skills" data-color="gradient-background-pink">
+        <h2 id="skills-title">skills</h2>
+        <p>Some of these skills are still a work in progress, while others I’ve developed through experience and
+            projects.</p>
+
+        <div class="skills-imgs">
+            <img id="python-img" src="https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png"
+                alt="python" title="Python Language">
+            <img id="javascript-img" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="javascript"
+                title="javascript Language">
+            <img id="html-img"
+                src="https://cdn.iconscout.com/icon/free/png-256/free-html-5-icon-svg-download-png-1175208.png"
+                alt="CSS" title="CSS Language">
+            <img id="php-img" src="https://cdn-icons-png.flaticon.com/512/5968/5968532.png" alt="php"
+                title="PHP Language">
+            <img id="laravel-img"
+                src="https://brandlogos.net/wp-content/uploads/2022/01/laravel-logo-brandlogo.net_.png" alt="Laravel"
+                title="Laravel framework">
+            <img id="mysql-img" src="https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png" alt="mysql"
+                title="mysql Language">
+
+        </div>
+
+
+    </div>
+
+    <!-- projects section -->
+    <div class="section project-section" id="project-section" data-color="gradient-background-yellow">
+        <!--this will be like a card that has a project info -->
         <div id="title">
             <h2>projects</h2>
         </div>
@@ -50,80 +77,89 @@
         <div class="projects">
 
             <div class="project"> <!--  project 1 -->
-                <img src="https://i.pinimg.com/1200x/c8/c2/32/c8c23250b368d19582f84677315115ae.jpg" alt="project 1"
-                    width="100">
+                <img src="./imgs/oad.png" alt="project 1">
                 <div class="content">
-                    <h3>project title</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sunt quas quo laboriosam, suscipit
-                        dolorum quia facilis sit? Delectus assumenda iure ex vitae, vel laborum. Nihil officia delectus
-                        nulla vero.</p>
-                    <a href="">link</a>
+                    <h2>o/ad</h2>
+                    <p>My graduation project: a platform for café managers providing data-driven insights and
+                        personalized promotional recommendations. Built using Django with Business Intelligence and AI
+                        techniques.</p>
+                    <a style="text-decoration: none;"
+                        href="https://www.linkedin.com/posts/shatha-alharbi-922a9a2a3_الحمد-لله-انتهينا-رسميا-من-مشروع-التخرج-activity-7326617966559617026-1uGb?utm_source=share&utm_medium=member_ios&rcm=ACoAAElPSaoB-hzD25CULfiTqFSnhbsbwRVY20w">linkdin
+                        post</a>
                 </div>
             </div>
 
 
             <div class="project"> <!--  project 2 -->
-                <img src="https://i.pinimg.com/1200x/c8/c2/32/c8c23250b368d19582f84677315115ae.jpg" alt="project 1"
-                    width="100">
+                <img src="./imgs/cloud.png" alt="project 2" width="100">
                 <div class="content">
-                    <h3>project title</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sunt quas quo laboriosam, suscipit
-                        dolorum quia facilis sit? Delectus assumenda iure ex vitae, vel laborum. Nihil officia delectus
-                        nulla vero.</p>
-                    <a href="">link</a>
+                    <h2>Cloud Archive</h2>
+                    <p>My final project during my summer internship: a Cloud Archive web platform built with Laravel.
+                    </p>
+                    <a style="text-decoration: none;" href="https://github.com/Raghad-programs/cloud-storage">Github
+                        repository</a>
                 </div>
 
             </div>
             <div class="project"> <!--  project 3 -->
-                <img src="https://i.pinimg.com/1200x/c8/c2/32/c8c23250b368d19582f84677315115ae.jpg" alt="project 1"
-                    width="100">
+                <img src="./imgs/blog.png" alt="project 3">
                 <div class="content">
-                    <h3>project title</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sunt quas quo laboriosam, suscipit
-                        dolorum quia facilis sit? Delectus assumenda iure ex vitae, vel laborum. Nihil officia delectus
-                        nulla vero.</p>
-                    <a href="">link</a>
+                    <h2>Blog website</h2>
+                    <p>A simple blog website I created while learning Laravel during my summer internship.</p>
+                    <a style="text-decoration: none;" href="https://github.com/sha7cs/Blogs_website">Github
+                        repository</a>
                 </div>
 
             </div>
-
-        </div>
-    </div>
-
-    <div class="section two-sections">
-        <div class="skills">
-            <h2 id="skills-title">skills</h2>
-            <div class="skills-imgs">
-                <img id="python-img" src="https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png"
-                    alt="python">
-                <img id="javascript-img" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="javascript">
-                <img id="html-img"
-                    src="https://cdn.iconscout.com/icon/free/png-256/free-html-5-icon-svg-download-png-1175208.png"
-                    alt="CSS">
-                <img id="php-img" src="https://cdn-icons-png.flaticon.com/512/5968/5968532.png" alt="php">
-                <img id="laravel-img"
-                    src="https://brandlogos.net/wp-content/uploads/2022/01/laravel-logo-brandlogo.net_.png"
-                    alt="Laravel">
+            <div class="project"> <!--  project 3 -->
+                <img src="https://cdn-icons-png.flaticon.com/512/12373/12373911.png" alt="project 3">
+                <div class="content">
+                    <h2>Sentinment Anlaysis</h2>
+                    <p>An AI project that analyzes and classifies reviews as either positive or negative.</p>
+                    <a style="text-decoration: none;" href="https://github.com/sha7cs/Sentiment_prediction">Github
+                        repository</a>
+                </div>
             </div>
 
 
         </div>
-
-        <div class="contacts" id="contacts">
-            <h2>my contacts</h2>
-            <div>
-
-            </div>
-        </div>
     </div>
 
-    <div>
-        <!-- form  -->
+
+    <!-- contacts section -->
+    <div class="section contacts" id="contacts" data-color="gradient-background-blue">
+        <h1 class="title">Contacts</h1>
+        <!--the icons are from flaticon website-->
+        <a class="link" href="https://www.linkedin.com" target="_blank">
+            <img src="./imgs/linkdin.png" alt="linkdin icon">
+            <span id="linkdin">Linkdin</span>
+        </a>
+
+        <a class="link" href="https://github.com/sha7cs?tab=repositories" target="_blank">
+            <img src="./imgs/email.png" alt="email icon">
+            <span id="Github">Github</span>
+        </a>
+
+        <a class="link">
+            <img src="./imgs/github.png" alt="github icon" target="_blank">
+            <span id="Email">Email : sha7cs@gmail.com</span>
+        </a>
     </div>
 
-    <footer>
+    <!-- form section -->
+    <div class='section form-section' style="" data-color="gradient-background-green">
+        <!-- all the below is from getform website-->
+        <form action="https://getform.io/f/axozrjlb" method="POST" enctype="multipart/form-data">
+            <h1 style="color: #267F53;">I'd love to hear from you! Share your thoughts in the form below.</h1>
+            <input type="text" name="name" placeholder="write your name">
+            <input type="email" name="email" placeholder="write your email">
+            <textarea type="text" name="message" placeholder="write your message here!"></textarea>
+            <!-- add hidden Honeypot input to prevent spams -->
+            <input type="hidden" name="_gotcha" style="display:none !important">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
 
-    </footer>
 </body>
 
 </html>
