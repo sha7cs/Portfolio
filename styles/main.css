@@ -231,8 +231,8 @@ div {
 }
 
 .skills p {
-  color: whitesmoke;
-  text-shadow: 0 0 4px rgb(48, 47, 47);
+  color: gray;
+  /* text-shadow: 0 0 4px rgb(48, 47, 47); */
   font-size: 1.3rem;
   background-color: #F5793B0F;
 }
